@@ -1,0 +1,16 @@
+.app-herobanner {
+  margin: 0 0 7rem 0;
+  padding: 7rem;
+  background-color: $dark-grey;
+  color: $background-white;
+  margin-top: -1px;
+  h1, p {
+    color: $background-white;
+  }
+}
+
+.movementHeroBanner {
+  background-color: $background-white;
+  padding: 3rem 5rem 5rem 5rem;
+  border-bottom: 1px solid $border-grey;
+}

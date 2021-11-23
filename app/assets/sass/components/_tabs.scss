@@ -1,0 +1,21 @@
+//tabs
+.govuk-tabs {
+  margin: 0;
+}
+
+.js-enabled {
+  .govuk-tabs__panel {
+      padding:5rem 0;
+      border: none;
+  }
+  .govuk-tabs__tab:link {
+    color: $links;
+  }
+  #tab_current-arrivals {
+    color: $body-copy;
+  }
+  .govuk-tabs__list-item--selected {
+    background-color: $background-grey;
+    font-weight: bold;
+  }
+}

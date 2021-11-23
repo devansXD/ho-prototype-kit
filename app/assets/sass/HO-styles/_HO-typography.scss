@@ -1,0 +1,187 @@
+// This is a smaller version of the master GOV type system to allow for more complex data work
+
+
+// Import Inter UI font
+@import url('https://rsms.me/inter/inter-ui.css');
+
+html {
+  font-size: 8px;
+}
+
+html * {
+  font-family: "Inter UI", arial, sans-serif !important;
+}
+
+/* Type will scale with document */
+h1, .h1, .govuk-heading-xxl {
+  font-size: 40px;
+  line-height: 48px;
+  font-size: 5rem;
+  line-height: 6rem;
+  font-family: "Inter UI", arial, sans-serif !important;
+  margin: 0 0 8px 0;
+}
+h2, .h2, .govuk-heading-xl {
+  font-size: 32px;
+  line-height: 40px;
+  font-size: 4rem;
+  line-height: 5rem;
+  margin: 0 0 1rem 0;
+}
+h3, .h3, .govuk-heading-l {
+  font-size: 27px;
+  line-height: 32px;
+  font-size: 3.38rem;
+  line-height: 4rem;
+}
+
+.govuk-heading-m {
+  font-size: 24px;
+  line-height: 32px;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+h4, .h4, .govuk-heading-s {
+  font-size: 21px;
+  line-height: 24px;
+  font-size: 2.63rem;
+  line-height: 3rem;
+}
+
+h5, .h5, .govuk-heading-xs {
+  font-size: 18px;
+  line-height: 24px;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  margin: 0;
+  color: inherit;
+}
+
+h6, .h6, .govuk-heading-xxs, .govuk-tag, .app-step-nav__button--title, .govuk-radios--small .govuk-label {
+  font-size: 16px;
+  line-height: 24px;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+h6 {
+  margin: 0;
+  display: inline-block;
+}
+
+.govuk-label {
+  color: $body-copy;
+}
+
+.govuk-radios__item .govuk-label {
+  font-weight: 400;
+}
+
+
+// CAPTIONS
+
+.govuk-caption-xl {
+  font-size: 27px;
+  line-height: 32px;
+  font-size: 3.38rem;
+  line-height: 4rem;
+}
+
+.govuk-caption-l {
+  font-size: 24px;
+  line-height: 32px;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.govuk-caption-m {
+  font-size: 21px;
+  line-height: 24px;
+  font-size: 2.63rem;
+  line-height: 3rem;
+}
+
+.govuk-caption-s {
+  font-size: 18px;
+  line-height: 24px;
+  font-size: 2.25rem;
+  line-height: 3rem;
+}
+
+
+
+// BODY COPY
+
+p, p.govuk-body, .govuk-list, .ho-body, .govuk-header__navigation-item a, .govuk-select, .govuk-button, .govuk-input, .govuk-table, .govuk-tabs__tab, button, .govuk-label {
+  font-size: 18px;
+  line-height: 24px;
+  font-size: 2.25rem;
+  line-height: 3rem;
+}
+
+p.govuk-body-l {
+  font-size: 21px;
+  line-height: 32px;
+  font-size: 2.63rem;
+  line-height: 4rem;
+}
+
+p.govuk-body-s, .govuk-phase-banner__content, .govuk-breadcrumbs, #topNav a, .pagination__item a, .govuk-table__header, .govuk-back-link, .govuk-details__summary-text, .govuk-radios__hint, .govuk-hint, .govuk-input__suffix {
+  font-size: 16px;
+  line-height: 24px;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.govuk-error-message {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.highlight {
+  padding: 1rem 0 0.5rem 0;
+  background-color: #FFF199;
+  border-bottom: 0.5rem solid #FFBF47;
+}
+
+
+
+//links
+.govuk-header__navigation-item a, .govuk-header__link:link, .govuk-header__link:visited {
+  color: $body-copy;
+  font-weight: 400;
+}
+.govuk-header__navigation-item a:active {
+  font-weight: 800;
+}
+
+.warningText, .warningText a {
+  color: $warning;
+}
+
+.secondaryText {
+  color: $body-secondary;
+}
+
+.govuk-breadcrumbs__link:link, button, .govuk-back-link:link, .govuk-breadcrumbs__link:visited, .govuk-back-link:visited {
+  color: $links;
+  text-decoration: underline;
+}
+
+
+
+//Alignment
+.alignRight {
+  text-align: right;
+}
+
+.alignCentre {
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+	html {
+    font-size: 7px;
+  }
+}

@@ -1,0 +1,23 @@
+.paginationContainer {
+  .pagination, p {
+    display: inline-block;
+  }
+  .pagination {
+    .pagination__item {
+      list-style: none;
+      display: inline-block;
+      .current {
+        color: $body-copy;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      a {
+        padding: 1rem;
+        &:hover, &:focus {
+          background: #F8F8F8;
+          outline: 3px solid #FFBF47;
+        }
+      }
+    }
+  }
+}

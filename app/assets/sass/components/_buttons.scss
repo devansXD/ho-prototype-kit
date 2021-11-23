@@ -1,0 +1,28 @@
+//Buttons
+.HO-button-white {
+  box-shadow: 0 1px 0 #0b0c0c;
+  border: #0b0c0c 1px solid;
+	background-color: $light-grey;
+	color: #0b0c0c;
+  text-decoration: none;
+	&[disabled]{
+		background-color: #FFF;
+	}
+}
+
+.HO-button-white:hover {
+	background-color: darken(#FFF, 5%);
+	color: #0b0c0c;
+	&[disabled]{
+		background-color: #FFF;
+	}
+}
+
+.govuk-button {
+  padding: 1rem 2rem;
+}
+
+
+.disabled {
+  opacity: 0.5;
+}

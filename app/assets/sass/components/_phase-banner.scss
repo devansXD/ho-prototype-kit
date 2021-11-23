@@ -1,0 +1,24 @@
+.govuk-phase-banner {
+  max-width: 100%;
+  padding: 0;
+  background-color: $light-grey;
+  border: none;
+  border-top: 1px solid $border-grey;
+  margin-top: 4rem;
+  display: block;
+  .govuk-phase-banner__content {
+    padding: 2rem 5rem;
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .govuk-phase-banner {
+    margin-top: 3rem;
+    .govuk-phase-banner__content {
+      padding: 2rem 4rem;
+      box-sizing: border-box;
+    }
+  }
+}

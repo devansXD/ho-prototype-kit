@@ -1,0 +1,55 @@
+.govuk-select, .govuk-input {
+  height: 5rem;
+}
+select.govuk-select {
+  color: $body-copy;
+}
+
+select option:disabled {
+  color: $body-secondary;
+}
+
+.govuk-radios__input {
+  width: 5rem;
+  height: 5rem;
+}
+.govuk-radios--small {
+  .govuk-radios__item {
+    padding-left: 4rem;
+    margin-right: 3rem;
+  }
+  .govuk-radios__label {
+    padding: 1.25rem 0rem;
+  }
+  .govuk-radios__label--description {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.govuk-form-group {
+  .stackedRadio {
+    .govuk-radios__item {
+      margin-bottom: 4rem;
+    }
+    .govuk-radios__label {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+#customDate {
+  display: none;
+  background-color: $light-grey;
+  padding: 2rem 3rem 3rem 3rem;
+  border-top: 1px solid $border-grey;
+  margin-top: 2rem;
+  margin-bottom: -5rem;
+}
+
+.govuk-input__suffix {
+  height: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

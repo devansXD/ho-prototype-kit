@@ -1,0 +1,37 @@
+.navbar {
+  background-color: $mid-grey;
+  padding: 0 5rem;
+  .alignLeft, .alignRight {
+    display: inline-block;
+    width: 49.5%;
+  }
+}
+.navbar .navbar__list-items {
+  padding-left: 0;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    margin-bottom: 0;
+    a {
+      display: inline-block;
+      padding: 3rem 2rem 2rem 2rem;
+      margin-right: 0;
+      margin-bottom: 0;
+      font-size: inherit;
+      &:hover {
+        border-bottom: 0.5rem solid $links !important;
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+    &.active a,
+    &.active a:hover {
+      color: $body-copy;
+      border-bottom: 0.5rem solid $links !important;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}

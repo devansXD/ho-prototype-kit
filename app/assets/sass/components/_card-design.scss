@@ -1,0 +1,123 @@
+.cardDesign, .indentedCard {
+  background-color: $background-white;
+  border: 1px solid $border-grey;
+  padding: 5rem;
+  margin-top: 3rem;
+  &:after, .row {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+  &.borderless {
+    border: none;
+  }
+  .row {
+    width: 100%;
+    margin: 0;
+    padding-top: 3rem;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+  .govuk-form-group {
+    margin-bottom: 0;
+    label {
+      margin-bottom: 1rem;
+    }
+    label.govuk-radios__label--description {
+      margin-bottom: 0;
+    }
+    select {
+      width: 100%;
+      padding: 0 1rem;
+    }
+    input {
+      padding: 0 1rem;
+    }
+  }
+  svg {
+    padding-top: 5rem;
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+.radioCard {
+  border: 1px solid $border-grey;
+  padding: 1rem 2rem 1.5rem 2rem;
+
+}
+
+.indentedCard {
+  border: none;
+  padding: 6rem 0 10rem 0;
+}
+
+.side-container {
+  border-top: $purple solid 0.4rem;
+  padding: 5rem;
+  background-color: $background-white;
+}
+
+.fullwidthCard {
+  margin: 0 -5rem 8rem -5rem;
+  background-color: #FFFFFF;
+  padding: 5rem 7rem;
+  width: calc(100% + 10rem);
+}
+
+.detailsCard, .detailsCardHeader {
+  background-color: $background-white;
+  padding: 2rem 7rem;
+  margin-bottom: 0;
+}
+.detailsCard {
+  h3 {
+    margin-top: 0;
+  }
+}
+.detailsCardHeader {
+  background-color: $mid-grey;
+  padding: 3rem 5rem;
+  margin-top: 5rem;
+  &:first-child {
+    margin-top: 0;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+}
+.govuk-sixteen_grid {
+  .columns.linkedSearchCard {
+    background-color: $background-grey;
+    border: 1px dashed $border-grey;
+    padding: 3rem 3rem 0 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 767px) {
+	.cardDesign {
+    padding: 4rem;
+    min-height: auto !important;
+    margin-bottom: 3rem;
+    .govuk-button {
+      margin: 0;
+    }
+  }
+  .side-container {
+    margin-bottom: 3rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1920px) {
+
+}

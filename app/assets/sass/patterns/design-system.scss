@@ -1,0 +1,49 @@
+.ds {
+    &-prose-container {
+        >p, >ul, >ol {
+            max-width: 70rem;
+        }
+    }
+
+    &-example {
+        border: 1px solid $govuk-border-colour;
+        background-color: white;
+
+        &__toolbar {
+            @include govuk-responsive-padding(3);
+            border-bottom: 1px solid $govuk-border-colour;
+            > a {
+                font-size: 2rem;
+            }
+        }
+
+        iframe {
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid $govuk-border-colour;
+        }
+
+        &__tabs {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            list-style: none;
+            > li > a {
+                display: block;
+                @include govuk-responsive-padding(3); 
+                border-right: 1px solid $govuk-border-colour;
+            }
+        }
+
+        &__tabs-container {
+            border-top: 1px solid $govuk-border-colour;
+            display: none;
+            &:target,
+            &.selected {
+                display: block;
+            }
+        }
+
+    }
+
+}

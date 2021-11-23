@@ -1,0 +1,26 @@
+.filtersAccordian {
+  button {
+    padding: 2rem;
+    width: 100%;
+    border: 1px solid $border-grey;
+    border-radius: 0;
+    background-color: $background-white;
+    text-align: left;
+    &:after {
+      content: "+";
+      float: right;
+    }
+  }
+  .filtersAccordianExpanded:after {
+    content: "–";
+  }
+}
+
+#showFilters {
+  display: none;
+  background-color: $background-white;
+  padding: 4rem 0 0 0;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+  margin-top: -1px;
+}

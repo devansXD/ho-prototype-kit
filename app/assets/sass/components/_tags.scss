@@ -1,0 +1,15 @@
+.govuk-tag {
+  text-transform: none;
+  letter-spacing: 0;
+  padding: 0 1rem;
+  margin-right: 1rem;
+}
+
+.govuk-tag--grey {
+  border: 1px solid $border-grey;
+  background-color: white;
+}
+
+.govuk-tag--warning {
+  background-color: $warning;
+}

@@ -1,0 +1,58 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-header";
+@import "patterns/step-by-step-nav";
+@import "patterns/step-by-step-related";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+
+
+// HOME OFFICE STYLES
+// Import header and footer
+@import "homeoffice/ho-header";
+@import "homeoffice/ho-footer";
+
+
+
+// HO ITERATIVE STYLES
+@import "HO-styles/HO-colour";
+@import "HO-styles/HO-8pt-changes";
+@import "HO-styles/HO-16-grid";
+@import "HO-styles/HO-typography";
+
+
+
+// Components that aren't in Frontend
+@import "components/accordian";
+@import "components/autocomplete";
+@import "components/buttons";
+@import "components/card-design";
+@import "components/cookie-banner";
+@import "components/design-history";
+@import "components/footer-NEW";
+@import "components/form-fields";
+@import "components/header-NEW";
+@import "components/hero-banner";
+@import "components/pagination";
+@import "components/phase-banner";
+@import "components/side-menu";
+@import "components/status-banner";
+@import "components/sub-navigation";
+@import "components/tables";
+@import "components/tabs";
+@import "components/tags";
+
+//standalone components
+@import "../../views/components/header/header";
+
+//design system styles
+@import "patterns/design-system";

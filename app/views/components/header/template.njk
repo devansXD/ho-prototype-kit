@@ -1,0 +1,17 @@
+{%- from "govuk/components/tag/macro.njk" import govukTag -%}
+
+<header class="header govuk-width-container">
+  <div class="header__wrapper">
+    <div class="header__title">
+        <a href="{{ params.homepage }}" class="header__name govuk-heading-l">{{ params.name }}</a>
+        <span class="header__description">{{ params.description }}</span>
+        {% if params.phase -%}
+        <span class="header__phase">
+          <a href="{{ params.phase.link or '#' }}" class="header__phase-link">{{- govukTag({
+            text: params.phase.text
+          }) -}}</a>
+        </span>
+        {%- endif -%}
+    </div>
+  </div>
+</header>
